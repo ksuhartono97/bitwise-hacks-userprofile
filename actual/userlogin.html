@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../bower_components/pouchdb/dist/pouchdb.min.js"></script>
+    <script src="../bower_components/pouchdb-authentication/dist/pouchdb.authentication.min.js"></script>
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "row" align = "center">
+            <h1>User Login</h1>
+        </div>
+        <div class = "row">
+            <div class = "col-sm-3">
+                <button id = "logout_user" type = "button" onClick="doLogout()">Logout</button>
+            </div>
+        </div>
+        <div class = "row">
+            <form>
+                <div class = "form-group">
+                    <div class = "row">
+                        <h3>Register</h3>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label for="registerUsername">Username: </label>
+                        </div>
+                        <div class = "col-sm-9">
+                            <input id="registerUsername">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label for="registerPassword">Password</label>
+                        </div>
+                        <div class = "col-sm-9">
+                            <input id="registerPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class = "row">
+                    <button id="register_button" type="button" onClick="doRegister()">Register</button>
+                </div>
+            </form>
+        </div>
+        <div class = "row">
+            <form>
+                <div class = "form-group">
+                    <div class = "row">
+                        <h3>Login</h3>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label for="loginUsername">Username: </label>
+                        </div>
+                        <div class = "col-sm-9">
+                            <input id="loginUsername">
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-sm-3">
+                            <label for="loginPassword">Password</label>
+                        </div>
+                        <div class = "col-sm-9">
+                            <input id="loginPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class = "row">
+                    <button id="login_button" type="button" onClick="doLogin()">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src = "../actual/scripts/userlogin.js"></script>
+</body>
+
+
+
+</html>
